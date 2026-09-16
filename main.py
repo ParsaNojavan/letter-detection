@@ -209,6 +209,12 @@ def recognize_character(points):
     # ----------------------------------------------------
     if not index_up and not middle_up and not ring_up and not pinky_up and not thumb_out:
         return "H"
+
+    # ----------------------------------------------------
+    # 13. ل L - تمامی انگشت ها بسته انگشت کوچک باز
+    # ----------------------------------------------------
+    if not index_up and not middle_up and not ring_up and pinky_up and not thumb_out:
+        return "L"
     
 
     return "?"
